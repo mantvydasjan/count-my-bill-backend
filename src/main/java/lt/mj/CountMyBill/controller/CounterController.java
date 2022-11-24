@@ -1,18 +1,13 @@
 package lt.mj.CountMyBill.controller;
 
 import lt.mj.CountMyBill.exception.CounterNotFoundException;
-import lt.mj.CountMyBill.model.Consumption;
 import lt.mj.CountMyBill.model.Counter;
 import lt.mj.CountMyBill.service.CounterService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
-import org.webjars.NotFoundException;
-
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/counters")
