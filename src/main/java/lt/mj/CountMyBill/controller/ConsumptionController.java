@@ -23,13 +23,13 @@ public class ConsumptionController {
     private ConsumptionService consumptionService;
 
     @Autowired
-    private CalculationService calculationService = new CalculationService();
+    private CalculationService calculationService;
 
     @Autowired
-    PriceService priceService = new PriceService();
+    private PriceService priceService;
 
     @Autowired
-    CounterService counterService = new CounterService();
+    private CounterService counterService;
 
     @GetMapping(path = "/{id}")
     @CrossOrigin(origins = "http://127.0.0.1:5173/")
