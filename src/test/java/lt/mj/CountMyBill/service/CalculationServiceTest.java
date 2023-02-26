@@ -22,6 +22,7 @@ class CalculationServiceTest {
         double actualConsumptionPrice = calculationService.calculateConsumptionPrice(consumption, servicePrice);
 
         assertEquals(expectedConsumptionPrice, actualConsumptionPrice);
+        
 
     }
 
