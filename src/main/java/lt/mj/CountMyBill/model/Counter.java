@@ -24,7 +24,4 @@ public class Counter {
             joinColumns = @JoinColumn(name = "counter_id"),
             inverseJoinColumns = @JoinColumn(name = "price_id"))
     private List<Price> prices = new ArrayList<>();
-    
-    
-
 }
