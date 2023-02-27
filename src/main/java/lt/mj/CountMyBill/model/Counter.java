@@ -16,12 +16,12 @@ public class Counter {
     private int counterId;
     private String serialNumber;
     private String description;
+    private String type;
     private int customerId;
     @ManyToMany
     @JoinTable(
             name = "counter_price",
             joinColumns = @JoinColumn(name = "counter_id"),
             inverseJoinColumns = @JoinColumn(name = "price_id"))
-    List<Price> prices = new ArrayList<>();
-
+    private List<Price> prices = new ArrayList<>();
 }

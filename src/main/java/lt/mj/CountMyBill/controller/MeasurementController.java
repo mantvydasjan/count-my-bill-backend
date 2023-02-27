@@ -34,7 +34,7 @@ public class MeasurementController {
                 id, dateTime);
     }
 
-   @Scheduled(fixedRate = 1, timeUnit = TimeUnit.HOURS)
+ //  @Scheduled(fixedRate = 2, timeUnit = TimeUnit.MINUTES)
     public void addMeasurement() throws IOException, ParseException {
         measurementService.addMeasurement();
     }
